@@ -1,5 +1,5 @@
 project = "aRt"
-description = "OpenCL raytracing pipeline"
+description = "OpenCL raytracing pipeline as a LuaJIT library"
 title = "aRt Documentation"
 format = "markdown"
 style = "!pale"

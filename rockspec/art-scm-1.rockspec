@@ -5,7 +5,7 @@ source = {
   branch = "master"
 }
 description = {
-  summary = "OpenCL raytracing pipeline",
+  summary = "OpenCL raytracing pipeline as a LuaJIT library",
   detailed = [[
     The aRt project aims to create an OpenCL raytracing pipeline implemented
     as a LuaJIT library (powered by OpenCL for Lua) in order to reach maximum
