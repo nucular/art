@@ -11,7 +11,7 @@ in order to reach maximum flexibility.
 The rendering process will be roughly structured as follows:
 
 - Shapes and materials are loaded, registered and inserted into the program code
-- A scene is and filled with objects
+- A scene is created and filled with objects
   - An object consists of a position, shape and material
 - A k-d tree is built from the scene and uploaded to the device
 - The program is compiled, uploaded to the device and executed
