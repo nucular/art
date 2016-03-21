@@ -1,6 +1,7 @@
 local art = {}
 
 art.Renderer = require("art.Renderer")
+art.Scene = require("art.Scene")
 
 art.Light = require("art.Light")
 art.Camera = require("art.Camera")
