@@ -1,2 +1,0 @@
-local shapes = {}
-return shapes

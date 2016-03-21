@@ -16,7 +16,8 @@ description = {
 }
 dependencies = {
   "lua ~> 5.1",
-  "opencl ~> 1.2.0"
+  "opencl ~> 1.2.0",
+  "templet ~> 1.0.2"
 }
 build = {
   type = "builtin",

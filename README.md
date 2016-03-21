@@ -10,12 +10,20 @@ in order to reach maximum flexibility.
 
 The rendering process will be roughly structured as follows:
 
-- Shapes and materials are loaded, registered and inserted into the program code
-- A scene is created and filled with objects
-  - An object consists of a position, shape and material
-- A k-d tree is built from the scene and uploaded to the device
-- The program is compiled, uploaded to the device and executed
-- The result image data can now be downloaded and
+- Geometries and materials are loaded, registered and inserted into the program
+  code by the preprocessor.
+- A scene is created and filled with objects.
+  - An object consists of a geometry, a material and their properties such as
+    position.
+- A k-d tree is built from the scene and uploaded to the device.
+  - Each leaf node will only contain the IDs of the geometry, material and their
+    property structs. While geometries and materials will have to be hard-coded
+    and looked up using a switch-construct, properties are stored as structs
+    inside an array.
+- The program is compiled, uploaded to the device and jobs for rendering small
+  chunks of the image (and then assembling them in global storage) are enqueued.
+- Once all jobs have been finished, the result can be downloaded from global
+  storage, processed and saved.
 
 The scene can be modified (objects added/removed, properties adjusted) without
-recompiling the OpenCL program, as long as no shapes or materials are added.
+recompiling the OpenCL program, as long as no geometries or materials are added.
