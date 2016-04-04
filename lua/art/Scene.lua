@@ -3,8 +3,6 @@ local templet = require("templet")
 
 local Scene = class()
 
-Scene.template = templet.loadstring([[
-
-]])
+Scene.HEADER = templet.loadstring([[]])
 
 return Scene

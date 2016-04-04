@@ -1,5 +1,8 @@
 local art = {}
 
+art.Vector = require("art.Vector")
+art.Color = require("art.Color")
+
 art.Renderer = require("art.Renderer")
 art.Scene = require("art.Scene")
 
